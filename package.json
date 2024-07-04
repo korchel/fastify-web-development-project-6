@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
     "start": "fastify start src/server/index.js -l debug -P -o"
   },
   "author": "",
@@ -13,13 +14,23 @@
   "dependencies": {
     "@fastify/formbody": "^7.4.0",
     "@fastify/passport": "^2.5.0",
+    "@fastify/static": "^7.0.4",
     "@fastify/view": "^9.1.0",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
     "fastify-cli": "^6.2.1",
     "i18next": "^23.11.5",
+    "mini-css-extract-plugin": "^2.9.0",
+    "pino-pretty": "^11.2.1",
     "pug": "^3.0.3",
-    "sqlite3": "^5.1.7",
-    "webpack": "^5.92.1"
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }

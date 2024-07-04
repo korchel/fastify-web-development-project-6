@@ -1,6 +1,6 @@
 export default (app) => {
   app
     .get('/', (req, res) => {
-      res.send('welcome');
+      res.view('src/views/welcome.pug')
     })
 };
